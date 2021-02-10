@@ -11,7 +11,7 @@ waline:
 <a class="about" >
    <img src='https://cdn.jsdelivr.net/npm/insouciant21-oss@latest/avatar.webp' />
     <b>Insouciant21</b>
-    <b>「 以雪案萤窗，换六月荣光。」</b>
+    <b>「  以雪案萤窗 换六月荣光  」</b>
 </a>
 {% endbtns %}
 
@@ -23,7 +23,7 @@ waline:
 
 喜欢打音游，但是只会打 [Arcaea](https://arcaea.lowiro.com/zh) 。 我的 Arcaea 好友 ID 是 `727856394` 。
 
-最喜欢的曲子是 {% btn Cyaecha, https://music.163.com/#/song?id=1491208647 %} 和 {% btn ω4, https://music.163.com/#/song?id=1398843466 %} 。
+最喜欢的曲子是 {% btn Cyaecha, https://music.163.com/#/song?id=1491208647 %} {% btn ω4, https://music.163.com/#/song?id=1398843466 %} 还有 {% btn Altale, https://music.163.com/#/song?id=30148635 %} 。
 
 <!-- endtab -->
 

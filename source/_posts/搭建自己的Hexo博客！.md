@@ -7,7 +7,7 @@ categories:
   - 教程
 ---
 
-本文将会详细说明使用 Hexo + Netlify 来搭建个人博客，并对主题进行配置。
+本文将会详细说明使用 Hexo + Vercel 来搭建个人博客，并对主题进行配置。
 
 通过本文的学习，你将收获一个免费、简洁的个人博客，并能够熟悉搭建、写作、部署的全流程。
 
@@ -15,27 +15,29 @@ categories:
 
 环境： Ubuntu 20.04
 
-# 准备
+## 准备
 
 预先安装以下程序：
 
 - [Node.js](http://nodejs.org/)
 - [Git](http://git-scm.com/)
 
-如果你已经安装好了，就可以直接前往[安装 Hexo](#安装-Hexo)了。
+然后准备好一个 Github 账号和一个用于存放博客文件的仓库。
 
-## 安装 Git
+如果你已经准备好了，就可以直接前往[安装 Hexo](#安装-Hexo)了。
+
+### 安装 Git
 
 - Windows 下直接前往[官网](https://git-scm.com/download/win)下载即可。
 - Linux(Ubuntu/Debian): 执行此命令安装 `sudo apt install git`
 
-## 安装 Node.js
+### 安装 Node.js
 
 前往 [Node.js 官网](https://nodejs.org/en/download/)下载安装程序，或是前往[国内镜像](https://repo.huaweicloud.com/nodejs/latest/)下载。
 
 其他的安装方法： 使用 [nvs](https://github.com/jasongin/nvs/)。
 
-# 安装 Hexo
+### 安装 Hexo
 
 Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
 
@@ -47,7 +49,7 @@ yarn global add hexo-cli
 ```
 使用 `hexo -v` 验证是否成功。
 
-# 建站
+## 建站
 
 准备好一个放置博客文件的文件夹，然后执行以下命令：
 ```bash
@@ -62,54 +64,54 @@ npm install # or yarn
 
 `themes` 是主题文件夹。Hexo 会根据主题来生成静态页面。
 
-到了这里，就可以先看看效果了
 
-```
-hexo s
-```
-然后访问 `localhost:4000` ，可以看到如下效果
+输入 `hexo s` 然后访问 `localhost:4000` ，可以看到如下效果
 
 ![](https://i.loli.net/2021/01/24/RxaklFPZKjO6Jdt.png)
 
-# 部署到 Netlify
+## 部署到 Vercel
 
-登录你的 [Github](https://github.com) 账号，然后创建一个仓库，仓库名任意。
+{% note warning, 接下来的部分默认你已经将本地文件储存至 Github %}
 
-将本地博客文件推送到仓库。
+首先将本地文件上传至 Github 仓库中。
 
-```bash
-git init 
-git add .
-git commit -m "first commit"
-git remote add origin <仓库地址>
-```
-然后推送到仓库
+进入 [Vercel 官网](https://vercel.com/signup) ，选择 `Continue with Github`
 
-```
-git push -u origin master
-```
+完成后在 `Import a Git Repository` 下的 `Select` 处添加 Github Account
 
-再注册一个 [Netlify](https://www.netlify.com/) 账号进行连接。
+![](https://unpkg.zhimg.com/insouciant21-oss@latest/1439757957/vercel_import1.png)
 
-- 登录后创建新 Site
+添加好账户后会出现你的仓库，从中选择你之前存放博客文件的仓库然后点击 `Import` ，例：
 
-![](https://i.loli.net/2021/01/24/3eOVG4UzvYQuhb2.png)
+![](https://unpkg.zhimg.com/insouciant21-oss@latest/1439757957/vercel_import2.png)
 
-- 连接你的 Github 账户
+`Import` 之后会出现这个页面，确认 `FRAMEWORK PRESET` 处为 Hexo 后就可以直接点击 `Deploy` 了。
 
-![](https://i.loli.net/2021/01/24/DQjhWrYfCBIH2cz.png)
+{% image https://unpkg.zhimg.com/insouciant21-oss@latest/1439757957/vercel_framework.png alt=如果 `FRAMEWORK PRESET` 处没有显示 Hexo 请自行切换 %}
 
-- 然后选择你刚才创建的仓库
+当出现烟花后你的博客就部署好了
 
-![](https://i.loli.net/2021/01/24/oj5O1Xtwba2EvNu.png)
+![](https://unpkg.zhimg.com/insouciant21-oss@latest/1439757957/vercel_success.png)
 
-- 选择好分支，构建命令后点击 Deploy site
+### 关于自定义域名
 
-![](https://i.loli.net/2021/01/24/mVkdcbrZj7hXKGB.png)
+Vercel 支持免费绑定自定义域名。
 
-等构建完成后就可以看到一个链接，这就是你的博客地址了。
+打开 Dashboard ，进入项目设置，点击 Domains 
 
-![](https://i.loli.net/2021/01/24/gFcPkMqVudmWo2p.png)
+![](https://unpkg.zhimg.com/insouciant21-oss@latest/1439757957/vercel_project_settings1.png)
+
+然后在这里添加自己的域名
+
+![](https://unpkg.zhimg.com/insouciant21-oss@latest/1439757957/vercel_project_settings2.png)
+
+按照帮助添加 DNS 记录验证之后，在你的域名下会有两个蓝色的勾
+
+![](https://unpkg.zhimg.com/insouciant21-oss@latest/1439757957/vercel_domain_success.png)
+
+然后就可以将其他域名重定向到这个域名上了。
+
+
 
 
 
