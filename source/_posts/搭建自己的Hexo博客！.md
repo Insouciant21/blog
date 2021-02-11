@@ -79,19 +79,19 @@ npm install # or yarn
 
 完成后在 `Import a Git Repository` 下的 `Select` 处添加 Github Account
 
-![](https://unpkg.zhimg.com/insouciant21-oss@latest/1439757957/vercel_import1.png)
+![](https://cdn.jsdelivr.net/npm/insouciant21-oss@latest/1439757957/vercel_import1.png)
 
 添加好账户后会出现你的仓库，从中选择你之前存放博客文件的仓库然后点击 `Import` ，例：
 
-![](https://unpkg.zhimg.com/insouciant21-oss@latest/1439757957/vercel_import2.png)
+![](https://cdn.jsdelivr.net/npm/insouciant21-oss@latest/1439757957/vercel_import2.png)
 
 `Import` 之后会出现这个页面，确认 `FRAMEWORK PRESET` 处为 Hexo 后就可以直接点击 `Deploy` 了。
 
-{% image https://unpkg.zhimg.com/insouciant21-oss@latest/1439757957/vercel_framework.png alt=如果 `FRAMEWORK PRESET` 处没有显示 Hexo 请自行切换 %}
+{% image https://cdn.jsdelivr.net/npm/insouciant21-oss@latest/1439757957/vercel_framework.png alt=如果 `FRAMEWORK PRESET` 处没有显示 Hexo 请自行切换 %}
 
 当出现烟花后你的博客就部署好了
 
-![](https://unpkg.zhimg.com/insouciant21-oss@latest/1439757957/vercel_success.png)
+![](https://cdn.jsdelivr.net/npm/insouciant21-oss@latest/1439757957/vercel_success.png)
 
 ### 关于自定义域名
 
@@ -99,15 +99,15 @@ Vercel 支持免费绑定自定义域名。
 
 打开 Dashboard ，进入项目设置，点击 Domains 
 
-![](https://unpkg.zhimg.com/insouciant21-oss@latest/1439757957/vercel_project_settings1.png)
+![](https://cdn.jsdelivr.net/npm/insouciant21-oss@latest/1439757957/vercel_project_settings1.png)
 
 然后在这里添加自己的域名
 
-![](https://unpkg.zhimg.com/insouciant21-oss@latest/1439757957/vercel_project_settings2.png)
+![](https://cdn.jsdelivr.net/npm/insouciant21-oss@latest/1439757957/vercel_project_settings2.png)
 
 按照帮助添加 DNS 记录验证之后，在你的域名下会有两个蓝色的勾
 
-![](https://unpkg.zhimg.com/insouciant21-oss@latest/1439757957/vercel_domain_success.png)
+![](https://cdn.jsdelivr.net/npm/insouciant21-oss@latest/1439757957/vercel_domain_success.png)
 
 然后就可以将其他域名重定向到这个域名上了。
 
