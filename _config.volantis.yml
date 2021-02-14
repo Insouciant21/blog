@@ -442,7 +442,7 @@ tag_plugins:
 ############################### Site Footer ############################### > start
 site_footer:
   # layout of footer: [aplayer, social, license, info, copyright]
-  layout: [aplayer, social, license, analytics, info, copyright]
+  layout: [aplayer, license, analytics, info, copyright,moeicp]
   social:
     - icon: #fas fa-rss
       url:
@@ -461,7 +461,7 @@ site_footer:
   # site copyright
   copyright: "[Copyright © 2021 Insouciant21](/)"
   # You can add your own property here. (Support markdown, for example: br: '<br>')
-  br: "<br>"
+  moeicp: '<a href="https://icp.gov.moe" target="_blank">萌ICP备 </a><a href="https://icp.gov.moe/?keyword=20214748" target="_blank"> 20214748号</a>'
 ############################### Site Footer ############################### > end
 
 ############################### Plugins ############################### > start
