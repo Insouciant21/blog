@@ -87,7 +87,7 @@ npm install # or yarn
 
 `Import` 之后会出现这个页面，确认 `FRAMEWORK PRESET` 处为 Hexo 后就可以直接点击 `Deploy` 了。
 
-{% image https://cdn.jsdelivr.net/npm/insouciant21-oss@latest/1439757957/vercel_framework.png alt="如果 `FRAMEWORK PRESET` 处没有显示 Hexo 请自行切换" %}
+![](https://cdn.jsdelivr.net/npm/insouciant21-oss@latest/1439757957/vercel_framework.png)
 
 当出现烟花后你的博客就部署好了
 
