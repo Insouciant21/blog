@@ -905,7 +905,7 @@ images: images
 # - https://waline.js.org/reference/component.html
 waline:
   # New! Whether enable this plugin
-  enable: true
+  enable: false
 
   # Waline server address url, you should set this to your own link
   serverURL: https://waline.vercel.app
